@@ -2,6 +2,7 @@ package com.example.twofragmaps
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     {
         super.onCreate(savedInstanceState)
 
+        AlertDialog.Builder(this).setPositiveButton("OK",null).setMessage("onCreate()").show()
         setContentView (R.layout.activity_main)
 
         // Find each fragment using their IDs
